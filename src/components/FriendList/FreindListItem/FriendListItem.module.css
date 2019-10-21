@@ -1,0 +1,21 @@
+.listItem {
+  display: flex;
+  width: 250px;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: space-around;
+  border: 2px solid #dde4ed;
+  margin-left: 20px;
+  padding: 10px 80px 10px 0;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.name {
+  font-weight: bold;
+}

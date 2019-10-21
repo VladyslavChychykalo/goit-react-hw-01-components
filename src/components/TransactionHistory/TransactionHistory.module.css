@@ -1,0 +1,41 @@
+.table {
+  margin: 0 auto;
+  width: 870px;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  border-collapse: collapse;
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.3);
+  margin-bottom: 120px;
+}
+
+.thead {
+  color: #fff;
+  background: #00bcd4;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.td {
+  color: #5c6975;
+}
+
+.th {
+  align-self: auto;
+  text-transform: uppercase;
+  height: 50px;
+}
+
+.tr {
+  height: 50px;
+  background: #fff;
+}
+
+.tr:nth-child(2n) {
+  background: #ecf2f3;
+}

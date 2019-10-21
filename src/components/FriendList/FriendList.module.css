@@ -1,0 +1,12 @@
+.friendWrapper {
+  background: #fff;
+  box-sizing: border-box;
+  width: 500px;
+  padding: 0;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: center;
+  padding: 20px 0 0 0;
+  border: 2px solid #dde4ed;
+  font-family: 'Lato';
+}
