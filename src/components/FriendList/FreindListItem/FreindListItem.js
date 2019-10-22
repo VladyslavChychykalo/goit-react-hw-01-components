@@ -1,24 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Span from './Span';
 import styles from './FriendListItem.module.css';
 
-const statusStyle = {
-  display: 'block',
-  width: '30px',
-  height: '30px',
-  borderRadius: '50%',
-};
+// const statusStyle = {
+//   display: 'block',
+//   width: '30px',
+//   height: '30px',
+//   borderRadius: '50%',
+// };
 
 export default function FriendListItem({ friend }) {
   return (
     <li className={styles.listItem}>
-      <span
+      {/* <span
         className="status"
         style={{
           ...statusStyle,
           backgroundColor: friend.isOnline ? 'green' : 'red',
         }}
-      />
+      /> */}
+      <Span isOnline={friend.isOnline} />
       <img
         className={styles.avatar}
         src={friend.avatar}
