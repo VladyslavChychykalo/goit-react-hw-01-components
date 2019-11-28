@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import FriendListItem from './FreindListItem/FreindListItem';
 import styles from './FriendList.module.css';
 
-export default function FriendList({ friends }) {
+const FriendList = ({ friends }) => {
   return (
     <ul className={styles.friendWrapper}>
       {friends.map(friend => (
@@ -11,7 +11,7 @@ export default function FriendList({ friends }) {
       ))}
     </ul>
   );
-}
+};
 
 FriendList.propTypes = {
   friends: PropTypes.arrayOf(
@@ -20,3 +20,5 @@ FriendList.propTypes = {
     }),
   ).isRequired,
 };
+
+export default FriendList;

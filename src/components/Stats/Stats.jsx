@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './Stats.module.css';
 
-export default function Stats({ title, stats }) {
+const Stats = ({ title, stats }) => {
   return (
     <section className={styles.statsWrapper}>
       <h2 className={styles.title}>{title}</h2>
@@ -23,7 +23,7 @@ export default function Stats({ title, stats }) {
       </ul>
     </section>
   );
-}
+};
 
 Stats.propTypes = {
   title: PropTypes.string.isRequired,
@@ -33,3 +33,5 @@ Stats.propTypes = {
     }),
   ).isRequired,
 };
+
+export default Stats;

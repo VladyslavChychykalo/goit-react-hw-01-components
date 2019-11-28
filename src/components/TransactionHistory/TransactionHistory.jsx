@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styles from './TransactionHistory.module.css';
 
-export default function TransactionHistory({ items }) {
+const TransactionHistory = ({ items }) => {
   return (
     <table className={styles.table}>
       <thead className={styles.thead}>
@@ -16,21 +16,15 @@ export default function TransactionHistory({ items }) {
       <tbody className={styles.tbody}>
         {items.map(item => (
           <tr key={item.id} className={styles.tr}>
-            <td className={[styles.td, styles.capitalize].join(' ')}>
-              {item.type}
-            </td>
-            <td className={[styles.td, styles.capitalize].join(' ')}>
-              {item.amount}
-            </td>
-            <td className={[styles.td, styles.capitalize].join(' ')}>
-              {item.currency}
-            </td>
+            <td className={styles.td}>{item.type}</td>
+            <td className={styles.td}>{item.amount}</td>
+            <td className={styles.td}>{item.currency}</td>
           </tr>
         ))}
       </tbody>
     </table>
   );
-}
+};
 
 TransactionHistory.propTypes = {
   items: PropTypes.arrayOf(
@@ -42,3 +36,5 @@ TransactionHistory.propTypes = {
     }),
   ).isRequired,
 };
+
+export default TransactionHistory;

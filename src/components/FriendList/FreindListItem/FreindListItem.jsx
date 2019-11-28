@@ -3,34 +3,15 @@ import PropTypes from 'prop-types';
 import Span from './Span';
 import styles from './FriendListItem.module.css';
 
-// const statusStyle = {
-//   display: 'block',
-//   width: '30px',
-//   height: '30px',
-//   borderRadius: '50%',
-// };
-
-export default function FriendListItem({ friend }) {
+const FriendListItem = ({ friend }) => {
   return (
     <li className={styles.listItem}>
-      {/* <span
-        className="status"
-        style={{
-          ...statusStyle,
-          backgroundColor: friend.isOnline ? 'green' : 'red',
-        }}
-      /> */}
       <Span isOnline={friend.isOnline} />
-      <img
-        className={styles.avatar}
-        src={friend.avatar}
-        alt={friend.alt}
-        width="48"
-      />
+      <img className={styles.avatar} src={friend.avatar} alt={friend.alt} />
       <p className={styles.name}>{friend.name}</p>
     </li>
   );
-}
+};
 
 FriendListItem.defaultProps = {
   friend: {
@@ -46,3 +27,5 @@ FriendListItem.propTypes = {
     alt: PropTypes.string,
   }),
 };
+
+export default FriendListItem;

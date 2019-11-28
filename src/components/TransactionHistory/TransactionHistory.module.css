@@ -17,12 +17,9 @@
   font-size: 15px;
 }
 
-.capitalize {
-  text-transform: capitalize;
-}
-
 .td {
   color: #5c6975;
+  text-transform: capitalize;
 }
 
 .th {
